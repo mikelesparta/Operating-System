@@ -1,0 +1,6 @@
+55
+5
+NOP 
+ADD 1, 2
+TRAP 4
+TRAP3

@@ -1,0 +1,14 @@
+//stores, successively, the even integer
+//values between 21 and 43 in the memory cell in address 122. For this purpose, use jump
+//instructions and the above MEMADD instruction.
+
+55 //size
+ADD 22 0
+WRITE 122 
+MEMADD 2 122
+WRITE 122
+INC -42 //check if accumulator is 42 then it is the last execution
+ZJUMP 3 //jump two positions down
+INC 42 //increment 42 in case it is not the end
+JUMP -5 //jump 5 positions up to INC 2 
+HALT

@@ -1,0 +1,15 @@
+//stores, successively, the powers of 2,
+//in ascending order, from 1 (2^0) to 1024 (2^10), in the memory cell in address 128.
+
+55  //size
+ADD 1 0
+WRITE 128 
+MEMMULT 2 128
+WRITE 128
+INC -1024 //check if accumulator is 1024 then it is the last execution
+ZJUMP 3
+INC 1024 //increment 1024 in case it is not the end
+JUMP -5
+HALT
+
+

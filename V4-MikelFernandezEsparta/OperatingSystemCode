@@ -1,0 +1,10 @@
+11
+IRET // Initial Operation for OS
+HALT // Shutdown the System
+// Here interrupt vector
+OS 2 // SysCall Interrupt SYSCALL_BIT
+IRET
+OS 6 // Exception Interrupt EXCEPTION_BIT
+IRET
+OS 9 //Clock Interrupt CLOCKINT_BIT
+IRET
